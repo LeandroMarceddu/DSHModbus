@@ -30,12 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.cmbCOM = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtBaud = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.txtSlaveID = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtBaud = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.cmbCOM = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnRefresh = new System.Windows.Forms.Button();
             this.btnTest = new System.Windows.Forms.Button();
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
@@ -59,38 +59,12 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Instellingen";
             // 
-            // label1
+            // txtSlaveID
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 16);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "COM-poort";
-            // 
-            // cmbCOM
-            // 
-            this.cmbCOM.FormattingEnabled = true;
-            this.cmbCOM.Location = new System.Drawing.Point(70, 13);
-            this.cmbCOM.Name = "cmbCOM";
-            this.cmbCOM.Size = new System.Drawing.Size(121, 21);
-            this.cmbCOM.TabIndex = 1;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(32, 44);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(32, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Baud";
-            // 
-            // txtBaud
-            // 
-            this.txtBaud.Location = new System.Drawing.Point(70, 41);
-            this.txtBaud.Name = "txtBaud";
-            this.txtBaud.Size = new System.Drawing.Size(121, 20);
-            this.txtBaud.TabIndex = 3;
+            this.txtSlaveID.Location = new System.Drawing.Point(70, 67);
+            this.txtSlaveID.Name = "txtSlaveID";
+            this.txtSlaveID.Size = new System.Drawing.Size(121, 20);
+            this.txtSlaveID.TabIndex = 5;
             // 
             // label3
             // 
@@ -101,12 +75,38 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Slave ID";
             // 
-            // txtSlaveID
+            // txtBaud
             // 
-            this.txtSlaveID.Location = new System.Drawing.Point(70, 67);
-            this.txtSlaveID.Name = "txtSlaveID";
-            this.txtSlaveID.Size = new System.Drawing.Size(121, 20);
-            this.txtSlaveID.TabIndex = 5;
+            this.txtBaud.Location = new System.Drawing.Point(70, 41);
+            this.txtBaud.Name = "txtBaud";
+            this.txtBaud.Size = new System.Drawing.Size(121, 20);
+            this.txtBaud.TabIndex = 3;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(32, 44);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(32, 13);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Baud";
+            // 
+            // cmbCOM
+            // 
+            this.cmbCOM.FormattingEnabled = true;
+            this.cmbCOM.Location = new System.Drawing.Point(70, 13);
+            this.cmbCOM.Name = "cmbCOM";
+            this.cmbCOM.Size = new System.Drawing.Size(121, 21);
+            this.cmbCOM.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(58, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "COM-poort";
             // 
             // btnRefresh
             // 
@@ -126,6 +126,7 @@
             this.btnTest.TabIndex = 2;
             this.btnTest.Text = "Test";
             this.btnTest.UseVisualStyleBackColor = true;
+            this.btnTest.Click += new System.EventHandler(this.btnTest_Click);
             // 
             // lsbDebug
             // 
