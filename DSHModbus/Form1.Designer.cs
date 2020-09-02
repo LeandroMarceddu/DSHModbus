@@ -116,6 +116,7 @@
             this.btnRefresh.TabIndex = 1;
             this.btnRefresh.Text = "Ververs COM";
             this.btnRefresh.UseVisualStyleBackColor = true;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // btnTest
             // 
